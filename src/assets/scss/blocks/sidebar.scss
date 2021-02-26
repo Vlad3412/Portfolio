@@ -2,10 +2,22 @@
     width: $sidebar-width;
     height: 100vh;
 
-    background-color: #ccc;
+    background-color: $primary;
+    box-shadow: 5px 0 15px rgba(#050505, .1);
 
     position: fixed;
     top: 0;
     left: 0;
     z-index: $z-index-sidebar;
+}
+
+.sidebar__content {
+    
+    padding: 8.5rem 2rem;
+}
+
+.sidebar__footer {
+    display: flex;
+    padding:  0 8rem;
+
 }
