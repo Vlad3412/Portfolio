@@ -16,7 +16,35 @@
 </head>
 <body>
     <div class="page">
-        <header class="header">header</header>
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link" href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>
+                            <a class="nav__link" href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="/" method="post">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
 
         <aside class="sidebar">
             <!-- <div class="sidebar__header">
