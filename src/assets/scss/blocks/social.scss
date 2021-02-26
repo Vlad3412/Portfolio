@@ -16,24 +16,9 @@
 .social__link {
 }
 
-// svg {
-//     display: block;
-// }
-
-// path {
-//     fill-opacity: 0;
-//     fill: #EF2B00;
-//     stroke: #fff;
-//     transition: all 0.4s linear;
-//   }
-
-//   svg:hover path {
-//     fill-opacity: 1;
-//     stroke-opacity: 0;
-//   }
-
 .icon {
     fill: #fff;
+    transition: fill .3s linear;
 }
 
 .icon:hover {

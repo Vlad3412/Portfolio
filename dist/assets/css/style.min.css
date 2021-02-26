@@ -409,7 +409,8 @@ body {
   margin: 0 .75rem; }
 
 .icon {
-  fill: #fff; }
+  fill: #fff;
+  transition: fill .3s linear; }
 
 .icon:hover {
   fill: #EF2B00; }
@@ -429,4 +430,5 @@ body {
   .btn--orang {
     background-color: #EF2B00; }
     .btn--orang:hover {
-      background-color: #e02800; }
+      background-color: #e02800;
+      color: #fff; }
