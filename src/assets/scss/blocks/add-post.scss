@@ -1,0 +1,55 @@
+.add-post {
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+
+    background-color: $secondory;
+
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .45);
+    border-radius: 5px;
+}
+
+.add-post__form {
+    display: flex;
+    align-items: center;
+}
+
+.add-post__textarea {
+    display: block;
+    width: 80%;
+    height: 2.6rem;
+
+    border: none;
+    background: transparent;
+    resize: none;
+
+    font-size: 1.5rem;
+    color: $white;
+    font-family: inherit;
+
+    &::placeholder {
+        color: #d2d2d2;
+    }
+}
+
+.add-post__form-actions {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.add-post__file {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+
+    background: url(/assets/images/social/Clip.svg) center no-repeat;
+    cursor: pointer;
+
+    input {
+        display: none;
+    }
+}
+
+.add-post__enter {
+    background: none;
+    border: none;
+}

@@ -3,4 +3,15 @@ layout: default
 title: portfolio | Home
 ---
 
-Hello!
+<div class="add-post">
+    <form class="add-post__form" action="/" method="post">
+        <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+
+        <div class="add-post__form-actions">
+            <label class="add-post__file" for="add-post-file">
+                <input type="file" id="add-post-file">
+            </label>
+            <button class="add-post__enter" type="submit"><img src="/assets/images/social/enter.svg" alt="Enter"></button>
+        </div>
+    </form>
+</div>
