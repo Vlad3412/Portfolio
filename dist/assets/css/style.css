@@ -576,11 +576,14 @@ body {
 .add-post__form {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .add-post__textarea {
     display: block;
-    width: 70%;
+    width: 80%;
+    height: 2.6rem;
     border: none;
     background: transparent;
     resize: none;
@@ -609,13 +612,27 @@ body {
     color: #d2d2d2;
 }
 
+.add-post__form-actions {
+    width: 20%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 .add-post__file {
     display: block;
     width: 4.4rem;
     height: 4.4rem;
-    background: url(/assets/images/social/Clip.svg) center;
+    background: url(/assets/images/social/Clip.svg) center no-repeat;
+    cursor: pointer;
 }
 
 .add-post__file input {
     display: none;
+}
+
+.add-post__enter {
+    background: none;
+    border: none;
 }
