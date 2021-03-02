@@ -1,0 +1,71 @@
+.comments {
+    margin-top: 5rem;
+}
+
+.comments__item {
+    margin-bottom: 3rem;
+    
+    // Якщо внас є ще один комент то ми йому добавляєм 
+    > .comments {
+        padding-left: 3rem;
+        margin-top: 3rem;
+    }
+}
+
+.comments__header {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.comments__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.comments__author {
+    flex-grow: 1;
+    padding-left: 1.5rem;
+
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.comments__name {
+    color: $white;
+    font-weight: 500;
+}
+
+.comments__pubdate {
+    color: #757575;
+}
+
+.comments___text {
+    margin-bottom: 1rem;
+
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: $white;
+
+    margin-bottom: 1.5rem;
+}
+
+.comments__reply {
+    padding: 0;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: #107EFF;
+
+    transition: color .3s linear;
+
+    &:hover {
+        color: $orange;
+        text-decoration: underline;
+    }
+}

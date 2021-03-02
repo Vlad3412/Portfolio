@@ -16,13 +16,19 @@
     transition: background-color .2s linear;
 
     &--orang {
-        background-color: #EF2B00;
+        background-color: $orange;
 
         
         &:hover {
-            background-color: darken(#FF2E00,6%);
+            background-color: darken($orange, 6%);
             color: $white;
         }
+    }
+
+    &--blue {
+        padding: 0.7em 1.25em;
+        background-color: #3137C9;
+        border-radius: 5px;
     }
     
 }

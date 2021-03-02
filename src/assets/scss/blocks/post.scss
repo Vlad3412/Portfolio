@@ -9,7 +9,12 @@
 }
 
 .post__header {
-    margin: -2.6rem -2.5rem 2.5rem;
+    margin: 0 0 2.5rem;
+
+    &--previev {
+        margin: -2.6rem -2.5rem 2.5rem;
+    }
+
 }
 
 .post__img {
@@ -36,14 +41,90 @@
 
         &:hover {
             text-decoration: underline;
-            color: #EF2B00;
+            color: $orange;
         }
+    }
+
+    &--mb0 {
+        margin-bottom: 0;
     }
 }
 
-.post__text {
+.post__subtitle {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 500;
+}
+
+.post__description {
     font-style: 1.4rem;
     color: #d2d2d2;
+}
+
+.post__text {
+    padding-bottom: 1rem;
+    font-style: 1.4rem;
+    color: $white;
+
+    border-bottom: 1px solid #1c1c1c;
+
+    h2, h3, h4, h5, h6 {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    h4, h5, h6 {
+        font-size: 1em;
+    }
+
+    ul, ol {
+        margin-bottom: 2rem;
+    }
+
+    ol {
+        list-style: decimal;
+        list-style-position: inside;
+    }
+
+    table {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    p {
+        margin-bottom: 2rem;
+    }
+
+    a {
+        color: blue;
+        
+        text-decoration: none;
+
+        transition: color .3s linear;
+
+        &:hover {
+            text-decoration: underline;
+            color: $orange;
+        }
+    }
 }
 
 .post__foter {
@@ -65,8 +146,29 @@
     color: #107eff; 
     text-decoration: none;
 
+    transition: color .2s linear;
+
     &:hover {
         text-decoration: underline;
-        color: #EF2B00;
+        color: $orange;
+    }
+}
+
+.post__actions {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.2rem;
+    color: rgba($white, .6);
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        transition: color .3s linear;
+
+        &:hover {
+            text-decoration: underline;
+            color: $orange;
+        }
     }
 }

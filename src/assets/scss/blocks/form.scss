@@ -1,0 +1,57 @@
+.form {
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #3f3f3f;
+    box-shadow: none;
+
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: $white;
+
+    transition: border-bottom .3s linear;
+
+    &:hover {
+        border-bottom: 1px solid $orange;
+    }
+
+    &::placeholder {
+        color: rgba($white, .2);
+    }
+
+    &:focus + .form__line { //робимо фокус на .form__line і збільшуємо його на 100%
+        width: 100%;
+    }
+
+    &--textarea {
+        height: 3rem;
+        overflow: hidden;
+        resize: none;
+    }
+}
+
+
+// При активному .form__line
+.form__line {
+    width: 0;
+    height: 1px;
+
+    background-color: $orange;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
