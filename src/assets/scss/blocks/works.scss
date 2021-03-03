@@ -1,0 +1,63 @@
+.work {
+    display: flex;
+    margin-bottom: 3rem;
+    overflow: hidden;//скриваєм те що вилазить за межі
+
+    background-color: $primary;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .35);
+    border-radius: 5px;
+}
+
+.work__preview {
+    width: 31rem;
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.work__content {
+    flex-grow: 1;//щоб ріс
+    max-width: 29rem;
+    padding: 2.5rem;
+}
+
+.work__title {
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size: 2.2rem;
+
+    a {
+        color: #3137C9;
+        text-decoration: none;
+
+        &:hover {
+            color: $orange;
+            text-decoration: underline;
+        }
+    }
+}
+
+.work__description {
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #d2d2d2;
+}
+
+.work__git {
+    margin-top: 20rem;
+    text-align: right;
+
+    transition: color .3s ease-in-out;
+
+    &:hover {
+        a {
+            color: $orange;
+        }
+    }
+}
