@@ -340,12 +340,18 @@ body {
   box-sizing: border-box; }
 
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   overflow: hidden; }
 
 .page__title {
   margin-bottom: 3rem;
   font-size: 2.1rem;
   color: #fff; }
+  .page__title--center {
+    text-align: center; }
 
 .header {
   display: flex;
@@ -717,14 +723,20 @@ body {
     color: #EF2B00;
     text-decoration: underline; }
 
+.form--auth {
+  max-width: 28rem;
+  margin: 0 auto; }
+
 .form__group {
   margin-bottom: 1.5rem;
   position: relative; }
+  .form__group--md {
+    margin-bottom: 2.5rem; }
 
 .form__control {
   display: block;
   width: 100%;
-  padding: .5rem 0;
+  padding: .5rem 0 .75rem;
   background: none;
   border: none;
   border-radius: 0;
@@ -753,6 +765,24 @@ body {
   left: 0;
   bottom: 0;
   z-index: 1; }
+
+.form__footer--center {
+  text-align: center; }
+
+.form__footer-list {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1.2; }
+  .form__footer-list li {
+    margin: 0 .5rem; }
+  .form__footer-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color .3s linear; }
+    .form__footer-list a:hover {
+      color: #EF2B00;
+      text-decoration: underline; }
 
 .work {
   display: flex;
@@ -799,3 +829,26 @@ body {
   transition: color .3s ease-in-out; }
   .work__git:hover a {
     color: #EF2B00; }
+
+.cabinet {
+  display: flex; }
+
+.cabinet__form {
+  width: 34rem; }
+
+.cabinet__avatar {
+  flex-grow: 1;
+  padding-left: 11rem; }
+  .cabinet__avatar img {
+    display: block;
+    margin-bottom: 1.5rem; }
+
+.cabinet__file {
+  font-size: 1.4rem;
+  color: #107EFF;
+  cursor: pointer; }
+  .cabinet__file:hover {
+    color: #EF2B00;
+    text-decoration: underline; }
+  .cabinet__file input {
+    display: none; }
