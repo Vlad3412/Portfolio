@@ -35,4 +35,8 @@
     &:hover {
         background-color: $orange;
     }
+
+    @include breakpoint($tablet-bp) {
+        font-size: 1.6rem;
+    }
 }

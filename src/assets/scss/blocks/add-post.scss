@@ -6,6 +6,11 @@
 
     box-shadow: 0 15px 25px rgba(0, 0, 0, .45);
     border-radius: 5px;
+
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
+
 }
 
 .add-post__form {
@@ -37,6 +42,11 @@
     flex-shrink: 0;//Забороняємо жиматися
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint($mobile-bp) {
+        width: 9rem;
+        height: 4rem;
+    }
 }
 .add-post__file {
     display: block;
@@ -49,9 +59,22 @@
     input {
         display: none;
     }
+
+    @include breakpoint($mobile-bp) {
+        width: 4.4rem;
+        height: 4.4rem;
+        margin-top: -.5rem;
+    }
 }
 
 .add-post__enter {
     background: none;
     border: none;
+
+    @include breakpoint($mobile-bp) {
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-top: -.5rem;
+        margin-right: 1rem;
+    }
 }

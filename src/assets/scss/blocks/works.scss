@@ -6,6 +6,10 @@
     background-color: $primary;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .35);
     border-radius: 5px;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
 }
 
 .work__preview {
@@ -17,12 +21,21 @@
         height: 100%;
         object-fit: cover;
     }
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+        height: 20rem;
+    }
 }
 
 .work__content {
     flex-grow: 1;//щоб ріс
     max-width: 29rem;
     padding: 2.5rem;
+
+    @include breakpoint($mobile-bp) {
+        max-width: none;
+    }
 }
 
 .work__title {
@@ -59,5 +72,9 @@
         a {
             color: $orange;
         }
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin-top: -4rem;
     }
 }
