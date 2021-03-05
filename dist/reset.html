@@ -14,7 +14,7 @@
     
     <title>Reset</title>
 </head>
-<body>
+<body class="show-sidebar">
     <div class="page">
         <header class="header">
             <div class="header__left">
@@ -40,6 +40,11 @@
                         </li>
                     </ul>
                 </nav>
+        
+                <button class="burger active" type="button">
+                    <span>open nav</span>
+                </button>
+        
                 <form class="search" action="/" method="post">
                     <input class="search__input" type="text" placeholder="Поиск по блогу">
                 </form>
@@ -52,10 +57,11 @@
             </div> -->
             <div class="sidebar__content">
                 <div class="profile">
-                    <img class="profile__avatar" src="https://placehold.it/100" alt="">
-                    <div class="profile__name">Vlad Gulyda</div>
-                    <div class="profile__prof">блог junior front-end разработчика</div>
         
+                <img class="profile__avatar" src="https://placehold.it/100" alt="">
+                        <div class="profile__name">Vlad Gulyda</div>
+                        <div class="profile__prof">блог junior front-end разработчика</div>
+                        
                     <ul class="social">
                         <li class="social__item">
                             <a class="social__link" href="https://github.com/Vlad3412" target="_blank">
@@ -95,6 +101,23 @@
                     </ul>
         
                 </div><!--/.profile-->
+        
+                <nav class="nav nav--mobile">
+                    <ul>
+                        <li>
+                            <a class="nav__link" href="/index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="/blog.html">Блог</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="/profile.html">Профиль</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
             </div> <!--/.sidebar__content-->
             <div class="sidebar__footer">
                 <a class="btn btn--orang" href="/works.html">Мои роботи</a>

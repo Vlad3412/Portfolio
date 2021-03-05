@@ -15,8 +15,9 @@
 
 .add-post__textarea {
     display: block;
-    width: 80%;
+    flex-grow: 1;
     height: 2.6rem;
+    overflow: hidden;//Скриваємо скрол
 
     border: none;
     background: transparent;
@@ -32,7 +33,8 @@
 }
 
 .add-post__form-actions {
-    width: 20%;
+    width: 120px;
+    flex-shrink: 0;//Забороняємо жиматися
     display: flex;
     justify-content: space-between;
 }

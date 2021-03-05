@@ -1,4 +1,11 @@
 .profile {
+    padding: 5rem;
+
+    @include breakpoint($tablet-bp) {
+    padding: 3rem;
+    
+    position: relative;
+    }
 }
 
 .profile__avatar {
@@ -10,17 +17,38 @@
     border: 2px solid $white;
     box-shadow: 0 7px 20px rgba(0, 0, 0, .25);
     border-radius: 50%;
+
+    @include breakpoint($tablet-bp) {
+        width: 6.5rem;
+        height: 6.5rem;
+        
+        margin-left: 0;
+
+        position: absolute;
+        left: 0;
+    }
 }
 
 .profile__name {
     font-size: 1.8rem;
     text-align: center;
+    
+    @include breakpoint($tablet-bp) {
+        margin-top: 1rem;
+    }
 }
 
 .profile__prof {
-    margin-bottom: 2rem;
+    width: 22rem;
     font-size: 1.4rem;
     font-weight: 300;
     color: #DEDEDE;
+    margin-left: -3rem;
     text-align: center;
+
+    @include breakpoint($tablet-bp) {
+        width: 30rem;
+        margin-left: -0.5rem;
+        font-size: 1.2rem;
+    }
 }
