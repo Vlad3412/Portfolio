@@ -4,8 +4,8 @@
     "description": "vlad",
     "author": "vlad",
     "devDependencies": {
-        "@babel/core": "^7.13.8",
-        "@babel/preset-env": "^7.13.9",
+        "@babel/core": "^7.13.10",
+        "@babel/preset-env": "^7.13.12",
         "babel-core": "^6.26.3",
         "babel-loader": "^8.2.2",
         "babel-preset-env": "^1.7.0",
@@ -24,7 +24,7 @@
         "gulp-strip-css-comments": "^2.0.0",
         "gulp-uglify": "^3.0.2",
         "panini": "^1.7.1",
-        "webpack": "^5.24.3",
+        "webpack": "^5.28.0",
         "webpack-stream": "^6.1.2"
     },
     "browserslist": [
